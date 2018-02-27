@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Антон](https://up.htmlacademy.ru/htmlcss/20/user/594481).
-* Наставник: Екатерина Анплитова.
+* Наставник: [Екатерина Анплитова] (https://htmlacademy.ru/profile/anplitova)
 
 ---
 
