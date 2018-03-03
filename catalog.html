@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a class="main-header-logo">
+        <img src="http://placehold.it/170x35" width="170" height="153" alt="Логотип интернет-магазина DEVICE">
+      </a>
+      <nav class="main-navigation">
+
+        <!-- пользовательская навигация -->
+
+        <ul class="user-navigation">
+          <li class="search">Поиск</li>
+          <li class="user-profile">Валентин Петухов</li>
+          <li class="log-out">Выйти</li>
+          <li class="compare">Сравнение</li>
+          <li class="basket">Корзина</li>
+        </ul>
+
+        <!-- основная навигация -->
+
+        <ul class="site-navigation">
+          <li>
+            <a href="catalog.html">КАТАЛОГ ТОВАРОВ </a>
+            <ul>
+              <li><a href="#"> Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+          <li><a href="#">ДОСТАВКА </a></li>
+          <li><a href="#">ГАРАНТИЯ </a></li>
+          <li><a href="#">КОНТАКТЫ </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- основной контент -->
+
+  	<main class="container">
+  		<h1 class="page-title">МОНОПОДЫ ДЛЯ СЕЛФИ</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a> </li>
+        <li><a href="#">Каталог товаров</a></li>
+        <li><a href="#">Моноподы для селфи</a></li>
+      </ul>
+      <section class="filters">
+        <h2 class="filter">Фильтр</h2>
+
+        <!-- прообраз формы -->
+
+        <form >
+            <div class="black-line-1"></div>
+            <b>Стоимость</b>
+            <span>ползунок</span>
+            <div class="black-line-2"></div>
+            <b>Цвет</b>
+            <label for="black">Черный</label>
+            <input type="checkbox" name="black">
+
+            <label for="white">Белый</label>
+            <input type="checkbox" name="white">
+
+            <label for="blue">Синий</label>
+            <input type="checkbox" name="blue">
+
+            <label for="red">Красный</label>
+            <input type="checkbox" name="red">
+
+            <label for="pink">Розовый</label>
+            <input type="checkbox" name="pink">
+
+            <div class="black-line-3"></div>
+            <b>Bluetooth</b>
+
+            <label for="true">Есть</label>
+            <input type="checkbox" name="true">
+
+            <label for="false">Нет</label>
+            <input type="checkbox" name="false">
+            <div class="btn-view"><a href="#">ПОКАЗАТЬ</a></div>
+          </form>
+      </section>
+
+      <!-- Каталог -->
+
+      <section class="catalog">
+        <h2>Сортировка:</h2>
+        <ul>
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По популярности</a></li>
+        </ul>
+        <span>стрелочки</span>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <img src="http://placehold.it/350x370" width="350px" height="370px" alt="Любительская селфи-палка">
+            </a>
+            <h3>
+              <a href="catalog-item.html">
+                <span class="item-name">Любительская селфи-палка</span>
+                <b>500 руб.</b>
+              </a> 
+            </h3>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <img src="http://placehold.it/350x370" width="350px" height="370px" alt="Профессиональная селфи-палка">
+            </a>
+            <h3>
+              <a href="catalog-item.html">
+                <span class="item-name">Профессиональная селфи-палка</span>
+                <b>1500 руб.</b>
+              </a> 
+            </h3>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <img src="http://placehold.it/350x370" width="350px" height="370px" alt="Непотопляемая селфи-палка">
+            </a>
+            <h3>
+              <a href="catalog-item.html">
+                <span class="item-name">Непотопляемая селфи-палка</span>
+                <b>2500 руб.</b>
+              </a> 
+            </h3>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <img src="http://placehold.it/350x370" width="350px" height="370px" alt="Селфи-палка следуй за мной">
+            </a>
+            <h3>
+              <a href="catalog-item.html">
+                <span class="item-name">Селфи-палка следуй за мной</span>
+                <b>4900 руб.</b>
+              </a> 
+            </h3>
+            </a>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-back"><a href="#">Назад</a></li>
+          <li class="pagination-item pagination-item-current"><a href="">1</a></li>
+          <li class="pagination-item"><a href="">2</a></li>
+          <li class="pagination-item"><a href="">3</a></li>
+          <li class="pagination-forward"><a href="#">Вперед</a></li>
+        </ul>
+      </section>
+
+  	</main>
+  	  <!-- footer -->
+  <footer class="page-footer">
+    <a class="footer-logo">
+        <img src="http://placehold.it/170x35" width="170" height="153" alt="Логотип интернет-магазина DEVICE">
+    </a>
+    <p class="footer-adress">г. Москва, ул Строителей, 15</p>
+
+    <!-- футер навигация -->
+
+    <ul class="footer-nav">
+      <li><a href="#"></a>ДОСТАВКА</li>
+      <li><a href="#"></a>ГАРАНТИЯ</li>
+      <li><a href="#"></a>КОНТАКТЫ</li>
+    </ul>
+
+    <!-- социальные кнопки -->
+
+    <ul class="social-btn">
+      <li><a class="social-btn" href="#">Фейсбук</a></li>
+      <li><a class="social-btn" href="#">Инстаграм</a></li>
+      <li><a class="social-btn" href="#">Твиттер</a></li>
+    </ul>
+    
+    <!-- юзерская навигация -->
+
+    <ul class="footer-user-navigation">
+      <li class="user-profile">Валентин Петухов</li>
+      <li class="log-out">Выйти</li>
+      <li class="compare">Сравнение</li>
+      <li class="basket">Корзина</li>
+    </ul>
+    <p class="footer-number">+7 (495) 495-95-95</p>
+    <a class="html-academy-link" href="#"></a>
+  </footer>
+  </body>
+ </html>
