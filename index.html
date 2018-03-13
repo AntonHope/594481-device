@@ -5,6 +5,17 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+    <div class="popup-write-us">
+      <form action="https://htmlacademy.ru" method="get">
+        <label for="name">Вашей имя</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия" tabindex="1" autofocus>
+        <label for="email">Ваш e-mail</label>
+        <input type="email" name="email" id="email" placeholder="email@example.com" tabindex="2">
+        <label for="text">Текст письма</label>
+        <textarea name="text" id="text" placeholder="В свободной форме" tabindex="3"></textarea>
+        <input type="submit" name="button" value="Отправить">
+      </form>
+    </div>
   	<header class="main-header">
       <a class="main-header-logo">
   		  <img src="http://placehold.it/170x35" width="170" height="153" alt="Логотип интернет-магазина DEVICE">
@@ -24,7 +35,7 @@
 
   			<ul class="site-navigation">
   				<li>
-            <a href="catalog.html">КАТАЛОГ ТОВАРОВ </a>
+            <a href="catalog.html">Каталог товаров </a>
             <ul>
               <li><a href="#"> Виртуальная реальность</a></li>
               <li><a href="#">Моноподы для селфи</a></li>
@@ -49,35 +60,81 @@
  			<!-- Слайдер-1 -->
 
  			<section class="slider">
-        <h2 class="visibility-hidden">Скрытый заголовок</h2>
-        <aside class="slider-photo">
+        <div class="slider-photo">
  				<img src="http://placehold.it/350x450" width="350" height="450" alt="селфи палка">
-        </aside>
+        </div>
  				<div class="slider-content">
-
-          <!-- белая линия и номера слайдов будут делатся с помощью before или дивов? -->
-
- 					<b> Делай селфи, как Бен Стиллер!</b>
+ 					<h2> Делай селфи, как Бен Стиллер!</h2>
  					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.</p>
- 					<a class="button" href="">Подробнее</a>
- 					<!-- переключатель стайдера -->
- 					<span></span>
- 					<ul>
- 						<li>8,5 m <p>длина палки</p> </li>
- 						<li>5 кг <p>вес палки</p></li>
- 						<li>Карбон <p>Материал</p> </li>
- 					</ul>
+ 					<a class="button" href="#">Подробнее</a>
+          <ul class="switch">
+            <li class="current-slider"></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <table class="characteristic">
+            <tr>
+              <th>8,5 m</th>
+              <th>5 кг</th>
+              <th>Карбон</th>
+            </tr>
+            <tr>
+              <td>длина палки</td>
+              <td>вес палки</td>
+              <td>Материал</td>
+            </tr>
+          </table>
  				</div>
  			</section>
  			<!-- Слайдер-2 -->
  			<section class="slider">
-        <h2 class="visibility-hidden">Скрытый заголовок</h2>
- 				<!-- у меня кончилась подписка на фотошоп, поэтому не смог посмотреть содеражние остальных слайдов -->
+ 				<div class="slider-photo">
+        <img src="http://placehold.it/350x450" width="350" height="450" alt="smart-watch">
+        </div>
+        <div class="slider-content">
+          <h2> Худеем <br> правильно!</h2>
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <a class="button" href="#">Подробнее</a>
+          <ul class="switch">
+            <li></li>
+            <li class="current-slider"></li>
+            <li></li>
+          </ul>
+          <table class="characteristic">
+            <tr>
+              <th>48 часов</th>
+            </tr>
+            <tr>
+              <td>Без подзарядки</td>
+            </tr>
+          </table>
+        </div>
  			</section>
  			<!-- Слайдер -3 -->
  			<section class="slider">
-        <h2 class="visibility-hidden">Скрытый заголовок</h2>
- 				
+        <div class="slider-photo">
+        <img src="http://placehold.it/350x450" width="350" height="450" alt="smart-watch">
+        </div>
+        <div class="slider-content">
+          <h2> Порхает как бабочка, <br> жалит как пчела!</h2>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <a class="button" href="#">Подробнее</a>
+          <ul class="switch">
+            <li></li>
+            <li></li>
+            <li class="current-slider"></li>
+          </ul>
+          <table class="characteristic">
+            <tr>
+              <th>800 м</th>
+              <th>50 м</th>
+            </tr>
+            <tr>
+              <td>Дальность полета</td>
+              <td>Радиус поражения</td>
+            </tr>
+          </table>
+        </div>
  			</section>
  		</div>
 
@@ -105,8 +162,8 @@
         <h2 class="visibility-hidden">Скрытый заголовок</h2>
  				<ul class="conditions-menu">
  					<li class="delivery-menu-current">Доставка</li>
- 					<li>Гарантия</li>
- 					<li>Кредит</li>
+ 					<li><a href="#">Гарантия</a></li>
+ 					<li><a href="#">Кредит</a></li>
  				</ul>
  				<div class="delivery-content">
  					<h2>Доставка</h2>
@@ -120,13 +177,14 @@
  			<section class="page-guarantee">
         <h2 class="visibility-hidden">Скрытый заголовок</h2>
         <ul class="conditions-menu">
-          <li>Доставка</li>
+          <li><a href="#">Доставка</a></li>
           <li class="guarantee-menu-current">Гарантия</li>
-          <li>Кредит</li>
+          <li><a href="#">Кредит</a></li>
         </ul>
         <div class="guarantee-content">
           <h2>Гарантия</h2>
-          <p></p>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — <br>не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+          <img src="http://placehold.it/120x150" width="120" height="150" alt="абстрактный значок">
         </div>
       </section>
 
@@ -135,15 +193,17 @@
       <section class="page-credit">
         <h2 class="visibility-hidden">Скрытый заголовок</h2>
         <ul class="conditions-menu">
-          <li>Доставка</li>
-          <li>Гарантия</li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
           <li class="credit--menu-current">Кредит</li>
         </ul>
         <div class="credit-content">
-          <h2>Гарантия</h2>
-          <p></p>
+          <h2>Кредит</h2>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты <br>подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>
+          <img src="http://placehold.it/120x150" width="120" height="150" alt="человек с рюкзаком">
         </div>
       </section>
+
  		</div>
 
       <!-- партнеры -->
