@@ -1,0 +1,186 @@
+
+@font-face {
+	font-family: 'gilroyextrabold';
+	src: url('../fonts/gilroyextrabold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'gilroylight';
+	src: url('fonts/gilroylight.woff2') format('woff2');
+	font-weight: lighter;
+	font-style: normal;
+}
+
+html { 
+	box-sizing: border-box; 
+}
+*, *::before, 
+*::after { 
+	box-sizing: inherit; 
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Open sans", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.popup-write-us label {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+}
+
+.button {
+	font-family: "gilroyextrabold", Arial, sans-serif;;
+
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	color: #000000;
+
+	border: none;
+	background-color: #ffffff;
+}
+
+
+.button:hover,
+.button:focus {
+	background-color: rgb(240, 197, 46);
+}
+
+.button:active {
+	background-color: rgb(240, 197, 46);
+	opacity: 0.3;
+}
+
+.main-header a:hover, 
+.main-header a:focus {
+	opacity: 0.6;
+}
+
+.main-header a:active {
+	opacity: 0.3;
+}
+
+.main-navigation {
+	font-size: 15px;
+	font-height: 30px;
+}
+
+.user-navigation,
+.site-navigation,
+.site-navigation>li>ul {
+	list-style: none;
+}
+
+.user-navigation a,
+.site-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+	opacity: 0.6;
+}
+
+.user-navigation a:active,
+.site-navigation a:active {
+	opacity: 0.3;
+}
+
+.site-navigation {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+}
+
+.site-navigation>li>ul {
+	font-family: "Open sans", Arial, sans-serif;
+}
+
+
+.slider h2 {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 56px;
+}
+
+.slider p {
+	opacity: 0.6;
+}
+
+.slider table td {
+	font-size: 13px;
+	line-height: 20px;
+	opacity: 0.6;
+}
+
+.slider table th {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 36px;
+	line-height: 48px;
+}
+
+.page-product ul {
+	list-style: none;
+}
+
+.page-product p {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.page-product a:hover,
+.page-product a:focus {
+	background-color: rgb(240, 197, 46);
+}
+
+.page-product a:active {
+	background-color: rgb(240, 197, 46);
+	opacity: 0.3;
+}
+
+.page-conditions ul {
+	list-style: none;
+	text-transform: uppercase;
+}
+
+.page-conditions a {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	color: #000000;
+	font-size: 18px;
+	line-height: 24px;
+
+}
+
+.page-conditions a:hover,
+.page-conditions a:focus {
+	background-color: rgb(240, 197, 46);
+}
+
+.page-conditions a:active {
+	background-color: #000000;
+	color: rgb(247, 225, 132);
+}
+
+.page-conditions h2 {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+}
+
+.page-conditions p {
+	opacity: 0.6;
+}
