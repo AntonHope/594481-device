@@ -48,6 +48,7 @@ a {
 	vertical-align: middle;
 	text-transform: uppercase;
 	color: #000000;
+	letter-spacing: 0.2em;
 
 	border: none;
 	background-color: #ffffff;
@@ -62,6 +63,10 @@ a {
 .button:active {
 	background-color: rgb(240, 197, 46);
 	opacity: 0.3;
+}
+
+input [type="text"]:focus {
+	border: 2px solid rgb(247, 226, 150);
 }
 
 .main-header a:hover, 
@@ -117,6 +122,7 @@ a {
 }
 
 .slider p {
+	font-family: "Open sans lighter", Arial, sans-serif;
 	opacity: 0.6;
 }
 
@@ -182,5 +188,182 @@ a {
 }
 
 .page-conditions p {
+	font-family: "Open sans lighter", Arial, sans-serif;
 	opacity: 0.6;
+}
+
+
+.info-about-as h2 {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+}
+
+.info-about-as p {
+	font-family: "Open sans lighter", Arial, sans-serif;
+	opacity: 0.6;
+}
+
+.info-about-as ul {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+}
+
+.contacts h2 {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px
+}
+
+.contacts p {
+	font-family: "Open sans lighter", Arial, sans-serif;
+	opacity: 0.6;
+}
+
+.page-footer {
+	background-color: rgb(70,70,70);
+	color: #ffffff;
+}
+
+.footer-user-navigation,
+.footer-nav,
+.social-btn {
+	list-style: none;
+}
+
+.footer-user-navigation a,
+.footer-nav a,
+.social-btn a {
+	color: #ffffff;
+}
+
+.page-footer a:hover,
+.page-footer a:focus {
+	opacity: 0.6;
+}
+
+.page-footer a:active {
+	opacity: 0.3;
+}
+
+.footer-nav {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+}
+
+.page-footer p {
+	font-family: "Open sans lighter", Arial, sans-serif;
+
+}
+
+	
+/*Стили для страници каталога*/
+
+.page-title {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+}
+
+.breadcrumbs a {
+	color: #000000;
+}
+
+.container ul {
+	list-style: none;
+}
+
+
+.breadcrumbs li:hover,
+.breadcrumbs li:focus {
+	opacity: 0.6;
+}
+
+.breadcrumbs li:active {
+	opacity: 0.1;
+}
+
+.breadcrumbs li {
+	font-family: "Open sans lighter", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	opacity: 0.3;
+}
+
+.filters h2 {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+}
+
+.filters b {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+}
+
+.filters label {
+	font-family: "Open sans lighter", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+/*.filters input [type="checkbox"]:hover,
+.filters input [type="checkbox"]:focus {
+
+}
+
+.filters input [type="checkbox"]:active {
+
+}
+
+*/
+
+.catalog h2 {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.2em;
+}
+
+.catalog h1 {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0,01em;
+}
+
+.catalog li {
+	list-style: none;
+	color: #000000;
+}
+
+
+.catalog a {
+	color: #000000;
+}
+
+.catalog  li:hover,
+.catalog  li:focus {
+	opacity: 0.6;
+}
+
+.catalog  li:active {
+	opacity: 0.1;
+}
+
+.catalog span {
+	font-family: "gilroylight", "Arial", sans-serif
+	font-size: 16px;
+	line-height: 24px;
+	opacity: 0.6;
+}
+
+.pagination-back a:hover,
+.pagination-back a:focus {
+	opacity: 0.6;
+}
+
+.pagination-back a:active {
+	opacity: 0.3;
 }
