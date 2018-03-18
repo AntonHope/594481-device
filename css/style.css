@@ -25,6 +25,7 @@ body {
 	margin: 0;
 	padding: 0;
 
+
 	font-family: "Open sans", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 30px;
@@ -41,6 +42,7 @@ a {
 	font-family: "gilroyextrabold", Arial, sans-serif;
 }
 
+
 .button {
 	font-family: "gilroyextrabold", Arial, sans-serif;;
 
@@ -54,6 +56,13 @@ a {
 	background-color: #ffffff;
 }
 
+.popup-write-us {
+	display: none;
+}
+
+.popup-map {
+	display: none;
+}
 
 .button:hover,
 .button:focus {
@@ -67,6 +76,60 @@ a {
 
 input [type="text"]:focus {
 	border: 2px solid rgb(247, 226, 150);
+}
+
+.main-header {
+	margin: 40px auto;
+	width: 1160px;
+	height: 299px;
+	background-color: rgb(247, 226, 150);
+}
+
+.main-header-logo img {
+	margin-top: -20px;
+	margin-left: 60px;
+}
+
+.user-navigation {
+	display: flex;
+	margin: 0 60px 20px 20px;
+}
+
+.user-navigation li:first-child {
+	margin-right: auto;
+}
+
+.user-navigation li:nth-child(2) {
+	margin-right: 110px;
+}
+
+.user-navigation li:nth-child(3) {
+	margin-right: 35px;
+}
+
+.user-navigation li:last-child {
+	margin-right: 0px;
+}
+
+.site-navigation {
+	display: flex;
+}
+
+.site-navigation li:first-child {
+	margin-right: auto;
+	margin-left: 20px;
+}
+
+.site-navigation li:nth-child(2) {
+	margin-right: 35px;
+}
+
+.site-navigation li:nth-child(3) {
+	margin-right: 110px;
+}
+
+.site-navigation li:last-child {
+	margin-right: 60px;
 }
 
 .main-header a:hover, 
@@ -89,6 +152,10 @@ input [type="text"]:focus {
 	list-style: none;
 }
 
+.site-navigation>li>ul {
+	display: none;
+}
+
 .user-navigation a,
 .site-navigation a {
 	color: #000000;
@@ -107,6 +174,7 @@ input [type="text"]:focus {
 }
 
 .site-navigation {
+	text-transform: uppercase;
 	font-family: "gilroyextrabold", Arial, sans-serif;
 }
 
