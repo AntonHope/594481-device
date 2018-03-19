@@ -11,11 +11,14 @@
       <div class="popup-write-us">
       <form action="https://echo.htmlacademy.ru" method="get">
         <button class="close-popup" aria-label='Закрыть окно'></button>
-        <label for="name" autofocus>Вашей имя</label>
-        <input type="text" name="name" id="name" placeholder="Имя Фамилия" tabindex="1" autofocus>
-        
-        <label for="email">Ваш e-mail</label>
-        <input type="email" name="email" id="email" placeholder="email@example.com" tabindex="2">
+        <div class="haf-width">
+          <label for="name" autofocus>Вашей имя</label>
+          <input type="text" name="name" id="name" placeholder="Имя Фамилия" tabindex="1" autofocus>
+        </div>
+        <div class="haf-width">
+          <label for="email">Ваш e-mail</label>
+          <input type="email" name="email" id="email" placeholder="email@example.com" tabindex="2">
+        </div>
         <label for="text">Текст письма</label>
         <textarea name="text" id="text" placeholder="В свободной форме" tabindex="3"></textarea>
         <input class="button" type="submit" name="button" value="Отправить">
@@ -45,7 +48,7 @@
   				<li>
             <a href="catalog.html">Каталог товаров </a>
             <ul>
-              <li><a href="#"> Виртуальная реальность</a></li>
+              <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
               <li><a href="#">Фитнес браслеты</a></li>
@@ -69,21 +72,21 @@
 
  			<section class="slider">
         <div class="slider-photo">
- 				<img src="img/slider-1.png" width="384" height="486" alt="селфи палка">
+ 				 <img src="img/slider-1.png" width="385" height="486" alt="селфи палка">
         </div>
  				<div class="slider-content">
- 					<h2> Делай селфи, как Бен Стиллер!</h2>
- 					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.</p>
+ 					<h2> Делай селфи,<br> как Бен Стиллер!</h2>
+ 					<p>Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.</p>
  					<a class="button" href="#">Подробнее</a>
           <table class="characteristic">
             <tr>
-              <th>8,5 m</th>
+              <th>8,5 м</th>
               <th>5 кг</th>
               <th>Карбон</th>
             </tr>
             <tr>
-              <td>длина палки</td>
-              <td>вес палки</td>
+              <td>Длина палки</td>
+              <td>Вес палки</td>
               <td>Материал</td>
             </tr>
           </table>
@@ -92,7 +95,7 @@
  			<!-- Слайдер-2 -->
  			<section class="slider">
  				<div class="slider-photo">
-        <img src="img/slider-2.png" width="345" height="485" alt="smart-watch">
+          <img src="img/slider-2.png" width="345" height="485" alt="smart-watch">
         </div>
         <div class="slider-content">
           <h2> Худеем <br> правильно!</h2>
@@ -136,8 +139,8 @@
  		<section class="page-product">
       <h2 class="visibility-hidden">Скрытый заголовок</h2>
  			<ul>
- 				<li><a href="#"><img src="img/popular-1.svg" width="95" height="55" alt="VR"></a><p>Виртуальная реальность</p></li>
- 				<li><a href="#"><img src="img/popular-2.svg" width="86" height="117" alt="Monophod for selfi"></a><p> Моноподы для селфи</p></li>
+ 				<li><a href="#"><img src="img/popular-1.svg" width="95" height="55" alt="VR"></a><p>Виртуальная<br> реальность</p></li>
+ 				<li><a href="#"><img src="img/popular-2.svg" width="86" height="117" alt="Monophod for selfi"></a><p> Моноподы<br> для селфи</p></li>
  				<li><a href="#"><img src="img/popular-3.svg" width="71" height="87" alt="Action-camera"></a><p>Экшн-камеры</p></li>
  				<li><a href="#"><img src="img/popular-4.svg" width="107" height="65" alt="fitnes-bracelets"></a><p>Фитнес-браслеты</p></li>
  				<li><a href="#"><img src="img/popular-5.svg" width="56" height="98" alt="smart watch"></a><p>Умные часы</p></li>
@@ -148,6 +151,7 @@
     <!-- блок услуги -->
 
  		<section class="page-conditions">
+     <div class="wrapper">
       <ul class="conditions-menu">
         <li><a href="#"> Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
@@ -156,13 +160,11 @@
 
       <!-- Информация по доставке -->
       <div class="slider-conditions">
- 			  <div class="page-delivery">
  				 <div class="delivery-content">
  					<h2>Доставка</h2>
  					<p>Мы с удовльствием доставим ваш товар прямо к вашему<br> подъезду совершенно бесплатно! Ведь мы неплохо<br> заработаем, поднимая его на ваш этаж</p>
  					<img src="img/delivery.svg" width="136" height="164" alt="Бегущий почальон">
  				 </div>
-        </div>
 
       <!-- Информация о гарантии -->
 
@@ -184,6 +186,7 @@
           </div>
         </div>
       </div>
+    </div>
     </section>
 
       <!-- партнеры -->
@@ -199,7 +202,7 @@
  		</section>
 
       <!-- блок о нас -->
-
+  <div class="wrapper-info-contacts">    
  		<section class="info-about-as">
  			<h2>О нас</h2>
  				<p>Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.</p>
@@ -220,34 +223,37 @@
  			<div class="map"><img src="img/small-map.png" width="560" height="222" alt="Map"></div>
  			<a class="button" href="#">Подробнее о нас</a>
  		</section>
+  </div>
 
  	</main>
   <!-- footer -->
  	<footer class="page-footer">
-    <a class="footer-logo">
+    <div class="wrapper">
+    <div class="wrapper-logo">
+      <a class="footer-logo">
         <img src="img/footer-logo.png" width="163" height="36" alt="Логотип интернет-магазина DEVICE">
-    </a>
+      </a>
  		<p class="footer-adress">г. Москва, ул Строителей, 15</p>
-
+    </div>
     <!-- футер навигация -->
-
- 		<ul class="footer-nav">
- 			<li><a href="#">ДОСТАВКА</a></li>
- 			<li><a href="#">ГАРАНТИЯ</a></li>
- 			<li><a href="#">КОНТАКТЫ</a></li>
- 		</ul>
+    <div class="wrapper-site-nav">
+ 		 <ul class="footer-nav">
+ 			  <li><a href="#">ДОСТАВКА</a></li>
+ 			  <li><a href="#">ГАРАНТИЯ</a></li>
+ 			  <li><a href="#">КОНТАКТЫ</a></li>
+ 		 </ul>
 
     <!-- социальные кнопки -->
 
- 		<ul class="social-btn">
- 			<li><a class="social-btn" href="#" aria-label='Фейсбук'>Фейсбук</a></li>
- 			<li><a class="social-btn" href="#" aria-label='Инстаграм'>Инстаграм</a></li>
- 			<li><a class="social-btn" href="#" aria-label='Твиттер'>Твиттер</a></li>
- 		</ul>
-    
+ 		 <ul class="social-btn">
+ 			  <li><a class="social-btn" href="#" aria-label='Фейсбук'>Фейсбук</a></li>
+ 			  <li><a class="social-btn" href="#" aria-label='Инстаграм'>Инстаграм</a></li>
+ 			  <li><a class="social-btn" href="#" aria-label='Твиттер'>Твиттер</a></li>
+ 		 </ul>
+    </div>
     <!-- юзерская навигация -->
-
-  	<ul class="footer-user-navigation">
+    <div class="footer-user-navigation">
+  	<ul>
       <li class="login-link"><a href="#"> Войти</a></li>
       <li class="compare"><a href="#">Сравнение</a></li>
       <li class="basket"><a href="#">Корзина</a></li>
