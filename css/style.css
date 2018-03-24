@@ -79,6 +79,7 @@ a {
 	background-image: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
 	border: none;
 	outline: none;
+	cursor:pointer;
 }
 
 .wrapper-info-contacts .button {
@@ -584,6 +585,10 @@ input [type="text"]:focus {
 	top: -100px;
 }
 
+
+
+
+
 .conditions-menu {
 	margin-top: -20px;
 	margin-right: 115px;
@@ -596,46 +601,6 @@ input [type="text"]:focus {
 	display: flex;
 	flex-direction: column;
 }
-
-
-
-.conditions-menu li {
-	margin-bottom: 27px;
-	text-align: left;
-	padding-top: 5px;
-	padding-left: 10px;
-}
-
-.page-conditions label {
-	font-family: "gilroyextrabold", Arial, sans-serif;
-	color: #000000;
-	font-size: 18px;
-	line-height: 24px;
-}
-
-
-.page-conditions label:hover,
-.page-conditions label:focus {
-	background-color: rgb(240, 197, 46);
-}
-
-.page-conditions label:active {
-	background-color: #000000;
-	color: rgb(247, 225, 132);
-}
-
-.conditions-menu li:active {
-	width: 268px;
-	height: 40px;
-	background-color: #000000;
-	color: rgb(247, 225, 132); 
-}
-
-.page-credit,
-.page-guarantee  {
-	display: none;
-}
-
 
 
 .slider-conditions .delivery-content {
@@ -701,6 +666,20 @@ input [type="text"]:focus {
 	font-family: "Open sans lighter", Arial, sans-serif;
 	opacity: 0.6;
 }
+
+
+.slider-conditions {
+	display: none;
+}
+
+#delivery:checked ~ .slider-conditions .page-delivery,
+#guarantee:checked ~ .slider-conditions .page-guarantee
+#credit:checked ~ .slider-conditions .page-credit {
+	display: block;
+}
+
+
+/*партнеры*/
 
 .partners {
 	margin: 0 auto;
@@ -955,7 +934,7 @@ input [type="text"]:focus {
 	content: url("../img/compare-footer.svg");
 
 	position: absolute;
-	right: 90px;
+	right: 82px;
 }
 
 .footer-basket::before {
@@ -1039,6 +1018,12 @@ input [type="text"]:focus {
 	margin-right: 61px;
 }
 
+.wrapper-nav-catalog .user-navigation li:nth-child(2)::before {
+	content: url("../img/user.svg");
+	position: absolute;
+	right: 145px;
+}
+
 .page-title {
 	font-family: "gilroyextrabold", Arial, sans-serif;
 	font-size: 47px;
@@ -1081,6 +1066,28 @@ input [type="text"]:focus {
 	font-size: 14px;
 	line-height: 24px;
 	opacity: 0.3;
+
+	position: relative;
+}
+
+.breadcrumbs li:first-child::before {
+	content: url("../img/nav-arrow.svg");
+
+	width: 4px;
+	height: 7px;
+
+	position: absolute;
+	left: 73px;
+}
+
+.breadcrumbs li:nth-child(2)::before {
+	content: url("../img/nav-arrow.svg");
+
+	width: 4px;
+	height: 7px;
+
+	position: absolute;
+	left: 125px;
 }
 
 .breadcrumbs li:hover,
@@ -1106,38 +1113,6 @@ input [type="text"]:focus {
 	width: 468px;
 }
 
-.filters .form-wrapper {
-	margin-left: 155px;
-	margin-top: 70px;
-
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-}
-
-.filters .form-wrapper label {
-	width: 230px;
-	display: flex;
-
-	font-family: inherit;
-	font-weight: lighter;
-}
-
-.filters .form-wrapper label input {
-	margin-right: 15px;
-}
-
-
-.filters .form-wrapper span{
-	width: 230px;
-
-	font-family: "gilroyextrabold", "Arial", sans-serif;
-	font-style: 18px;
-	line-height: 24px;
-	letter-spacing: 0.01em;
-}
-
-
 
 .filters-caption-wrapper {
 	padding-top: 10px;
@@ -1156,14 +1131,145 @@ input [type="text"]:focus {
 	letter-spacing: 0.2em;
 }
 
-.filters b {
-	font-family: "gilroyextrabold", Arial, sans-serif;
-}
 
 .filters label {
 	font-family: "Open sans lighter", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 40px;
+}
+
+.filters .form-wrapper {
+	margin-left: 155px;
+	margin-top: 70px;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.filters .form-wrapper b{
+	width: 230px;
+
+	display: inline-block;
+
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-style: 18px;
+	line-height: 24px;
+	letter-spacing: 0.01em;
+	font-weight: bold;
+
+	position: relative;
+}
+
+.form-wrapper b:first-child {
+	margin-bottom: 27px;
+	margin-top: 20px;
+}
+
+.form-wrapper b:first-child::before {
+	content: url("../img/filter-black-line.svg");
+
+	position: absolute;	
+	bottom: 30px;
+}
+
+.form-wrapper b:nth-child(3) {
+	margin-top: 57px;
+	margin-bottom: 17px;
+}
+
+
+.form-wrapper b:nth-child(3)::before {
+	content: url("../img/filter-black-line.svg");
+
+	position: absolute;	
+	bottom: 30px;
+}
+
+.form-wrapper b:nth-of-type(3) {
+	margin-top: 43px;
+	margin-bottom: 16px;
+}
+
+.form-wrapper b:nth-of-type(3)::before {
+	content: url("../img/filter-black-line.svg");
+
+	position: absolute;	
+	bottom: 30px;
+}
+
+.filters .form-wrapper label {
+	width: 230px;
+	display: flex;
+
+	font-family: inherit;
+	font-weight: lighter;
+}
+
+.form-wrapper input[type="checkbox"],
+.form-wrapper input[type="radio"] {
+	display: none;
+}
+
+.form-wrapper span {
+	margin-top: 8px;
+	margin-right: 15px;
+
+	background-image: url(../img/checkbox-off.svg);
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 27px;
+	height: 23px;
+
+	vertical-align: middle;
+	cursor:pointer;
+}
+
+input[type="checkbox"]:checked ~ span{
+	margin-top: 8px;
+	margin-right: 15px;
+
+	background-image: url(../img/checkbox-on.svg);
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 27px;
+	height: 23px;
+
+	vertical-align: middle;
+	cursor:pointer;
+}
+
+.form-wrapper i {
+	margin-top: 8px;
+	margin-right: 15px;
+
+	background-image: url(../img/radio-off.svg);
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+
+	vertical-align: middle;
+	cursor:pointer;
+}
+
+input[type="radio"]:checked ~ i {
+	margin-top: 8px;
+	margin-right: 15px;
+
+	background-image: url(../img/radio-on.svg);
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+
+	vertical-align: middle;
+	cursor:pointer;
+}
+
+
+.form-wrapper input:last-of-type {
+	margin-top: 25px;
 }
 
 
@@ -1173,9 +1279,6 @@ input [type="text"]:focus {
 .catalog-sub-menu {
 	display: none;
 }
-
-
-
 
 .catalog-sorting {
 	margin: 0;
@@ -1369,8 +1472,19 @@ input [type="text"]:focus {
 }
 
 .user-nav-list li:nth-child(2) {
-	margin-right: 60px;
+	margin-right: 62px;
 }
 .user-nav-list li:nth-child(3) {
-	margin-right: 60px;
+	margin-right: 63px;
+}
+
+.log-out {
+	opacity: 0.3;
+}
+
+.user-profile::before {
+	content: url("../img/user-footer.svg");
+
+	position: absolute;
+	right: 145px;
 }

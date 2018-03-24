@@ -158,14 +158,18 @@
  		<section class="page-conditions">
       
      <div class="wrapper">
-      <ul class="conditions-menu">
-        <li><label for="delivery" name="delivery">Доставка</label> </li>
-        <li><label for="guarantee" name="guarantee">Гарантия</label></li>
-        <li><label for="credit" name="credit">Кредит</label></li>
-      </ul>
+      <div class="conditions-data">
+        <input type="radio" id="delivery" name="toggle-service" checked>
+        <input type="radio" id="guarantee" name="toggle-service">
+        <input  type="radio" id="credit" name="toggle-service">
+      </div>
+      <div class="conditions-menu">
+        <label class="button" for="delivery" name="delivery">Доставка</label>
+        <label class="button" for="guarantee" name="guarantee">Гарантия</label>
+        <label class="button" for="credit" name="credit">Кредит</label>
+      </div>
 
       <div class="slider-conditions">
-
         <!-- Информация по доставке -->
 
         <div class="page-delivery">
@@ -266,7 +270,7 @@
     <div class="footer-user-navigation">
   	<ul>
       <li><a class="footer-login" href="#">Войти</a></li>
-      <li><a class="footer-compare" href="#">Сравнение</a></li>
+      <li><a class="footer-compare" href="#">Сравнить</a></li>
       <li><a class="footer-basket" href="#">Корзина</a></li>
     </ul>
   	<p class="footer-number">+7 (495) 495-95-95</p>
