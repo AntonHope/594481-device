@@ -55,6 +55,10 @@ a {
 }
 
 .fixed-overlay {
+	display: none;
+}
+
+.fixed-overlay {
 	position: fixed;
     overflow: auto;
     left: 0;
@@ -1569,6 +1573,7 @@ input[type="radio"]:checked ~ i {
 
 .catalog-item {
 	position: relative;
+
 }
 
 .catalog .item-hover {
@@ -1602,12 +1607,17 @@ input[type="radio"]:checked ~ i {
 	opacity: 0.2;
 }
 
-.catalog .item-hover {
+.item-hover {
 	display: none;
 }
 
-.catalog-item .img-item:hover + .item-hover {
-	display: flex;
+.img-item:hover + .item-hover {
+	display: block;
+	top:0;
+}
+
+.item-hover:hover {
+	display: block;
 }
 
 
@@ -1731,3 +1741,5 @@ input[type="radio"]:checked ~ i {
 	position: absolute;
 	right: 145px;
 }
+
+
