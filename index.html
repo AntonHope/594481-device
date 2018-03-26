@@ -8,25 +8,30 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-      <div class="popup-write-us">
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <button class="close-popup" aria-label='Закрыть окно'></button>
+    <div class="fixed-overlay">
+      <form class="popup-write-us" id="modal-popap" action="https://echo.htmlacademy.ru" method="get">
         <div class="haf-width">
-          <label for="name" autofocus>Вашей имя</label>
+          <label for="name" autofocus>Ваше имя</label>
           <input type="text" name="name" id="name" placeholder="Имя Фамилия" tabindex="1" autofocus>
         </div>
         <div class="haf-width">
           <label for="email">Ваш e-mail</label>
           <input type="email" name="email" id="email" placeholder="email@example.com" tabindex="2">
         </div>
-        <label for="text">Текст письма</label>
-        <textarea name="text" id="text" placeholder="В свободной форме" tabindex="3"></textarea>
+        <div class="textarea-box">
+          <label for="text">Текст письма</label>
+          <textarea name="text" id="text" placeholder="В свободной форме" tabindex="3"></textarea>
+        </div>
         <input class="button" type="submit" name="button" value="Отправить">
       </form>
     </div>
+
+
     <div class="popup-map">
       <img src="img/map-big.png" width="960" height="559" alt="Map">
+      
     </div>
+
   	<header class="main-header">
       <a class="main-header-logo">
   		  <img src="img/logo-nav.png" width="164" height="36" alt="Логотип интернет-магазина DEVICE">
@@ -67,7 +72,14 @@
  		<!-- Слайдер -->
 
  		<div class="page-slider">
+        <input type="radio" id="slider-1" name="radio" checked>  
+        <input type="radio" id="slider-2" name="radio">
+        <input type="radio" id="slider-3" name="radio">
 
+        <label for="slider-1"><span></span></label>
+        <label for="slider-2"><span></span></label>
+        <label for="slider-3"><span></span></label>
+       
  			<!-- Слайдер-1 -->
 
  			<section class="slider">
@@ -77,12 +89,7 @@
  				<div class="slider-content">
  					<h2> Делай селфи,<br> как Бен Стиллер!</h2>
  					<p>Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.</p>
-          <div class="slider-btn">
- 					  <a class="button" href="#">Подробнее</a>
-            <input class="slider-radio" type="radio" id="1" name="radio">
-            <input class="slider-radio" type="radio" id="2" name="radio">
-            <input class="slider-radio" type="radio" id="3" name="radio">
-          </div>
+ 					<a class="button" href="#">Подробнее</a>
           <table class="characteristic">
             <tr>
               <th>8,5 м</th>
@@ -137,6 +144,7 @@
           </table>
         </div>
  			</section>
+
  		</div>
 
     <!-- продукты -->
@@ -158,15 +166,15 @@
  		<section class="page-conditions">
       
      <div class="wrapper">
-      <div class="conditions-data">
-        <input type="radio" id="delivery" name="toggle-service" checked>
-        <input type="radio" id="guarantee" name="toggle-service">
-        <input  type="radio" id="credit" name="toggle-service">
-      </div>
+
+        <input class="visibility-hidden" type="radio" id="delivery" name="toggle-service" checked>
+        <input class="visibility-hidden" type="radio" id="guarantee" name="toggle-service">
+        <input class="visibility-hidden" type="radio" id="credit" name="toggle-service">
+
       <div class="conditions-menu">
-        <label class="button" for="delivery" name="delivery">Доставка</label>
-        <label class="button" for="guarantee" name="guarantee">Гарантия</label>
-        <label class="button" for="credit" name="credit">Кредит</label>
+        <label class="button conditions-item" for="delivery" name="delivery">Доставка</label>
+        <label class="button conditions-item" for="guarantee" name="guarantee">Гарантия</label>
+        <label class="button conditions-item" for="credit" name="credit">Кредит</label>
       </div>
 
       <div class="slider-conditions">
@@ -185,7 +193,7 @@
  			<div class="page-guarantee">
           <div class="guarantee-content">
             <h2>Гарантия</h2>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — <br>не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит<br> дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
             <img src="img/warranty.svg" width="171" height="195" alt="Гарантия">
           </div>
         </div>
@@ -195,7 +203,7 @@
       <div class="page-credit">
           <div class="credit-content">
             <h2>Кредит</h2>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты <br>подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>
+            <p>Залезть в долговую яму стало проще! Кредитные<br> консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>
             <img src="img/credit.svg" width="156" height="188" alt="человек с рюкзаком">
           </div>
         </div>
@@ -235,7 +243,7 @@
  			<h2>Контакты</h2>
  			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
  			<div class="map"><img src="img/small-map.png" width="560" height="222" alt="Map"></div>
- 			<a class="button" href="#">Напишите нам</a>
+ 			<a class="button" href="#modal-popap">Напишите нам</a>
  		</section>
   </div>
  	</main>
