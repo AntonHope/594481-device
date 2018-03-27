@@ -173,6 +173,7 @@ a {
 	letter-spacing: 0.2em;
 	font-size: 18px;
 	line-height: 24px;
+	font-weight: bold;
 
 	background-image: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
 	border: none;
@@ -273,6 +274,7 @@ input [type="text"]:focus {
 
 	width: 13px;
 	height: 12px;
+	z-index: 30;	
 }
 
 .compare::before {
@@ -449,6 +451,7 @@ input [type="text"]:focus {
 	font-family: "gilroyextrabold", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
+	font-weight: bold;
 }
 
 .site-navigation>li>ul {
@@ -456,6 +459,7 @@ input [type="text"]:focus {
 	font-size: 15px;
 	line-height: 36px;
 	text-transform: none;
+	font-weight: lighter;
 }
 
 /*слайдер*/
@@ -660,8 +664,8 @@ input [type="text"]:focus {
 
 .page-product {
 	margin: 0 auto;
-	margin-top: 105px;
-	margin-bottom: 184px;
+	margin-top: 115px;
+	margin-bottom: 164px;
 
 	width: 1160px;
 }
@@ -690,6 +694,7 @@ input [type="text"]:focus {
 }
 
 .page-product p {
+	margin-top: 33px;
 	font-family: "gilroyextrabold", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
@@ -915,7 +920,7 @@ input [type="text"]:focus {
 }
 
 .wrapper-info-contacts a {
-	margin-top: 75px;
+	margin-top: 52px;
 }
 
 .info-about-as {
@@ -930,6 +935,8 @@ input [type="text"]:focus {
 }
 
 .info-about-as h2 {
+	margin-bottom: 30px;
+
 	font-family: "gilroyextrabold", Arial, sans-serif;
 	font-size: 47px;
 	line-height: 48px;
@@ -941,7 +948,7 @@ input [type="text"]:focus {
 }
 
 .info-about-as ul {
-	margin-top: 70px;
+	margin-top: 63px;
 	padding: 0;
 	padding-left: 38px;
 	font-family: "gilroyextrabold", Arial, sans-serif;
@@ -965,19 +972,23 @@ input [type="text"]:focus {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: flex-start;
+	
 }
 
 .contacts h2 {
+	margin-bottom: 11px;
 	font-family: "gilroyextrabold", Arial, sans-serif;
 	font-size: 47px;
 	line-height: 48px
 }
 
 .contacts p {
-
 	font-family: "Open sans lighter", Arial, sans-serif;
 	opacity: 0.6;
+}
+
+.contacts img {
+	margin-top: 10px;
 }
 
 
@@ -1149,19 +1160,19 @@ input [type="text"]:focus {
 }
 
 .footer-user-navigation li:last-child {
-	margin-right: -50px;
+	margin-right: -20px;
 }
 
 .footer-user-navigation p {
 	margin-top: -50px;
-	margin-right: -50px;
+	margin-right: -20px;
 }
 
 .footer-user-navigation .html-academy-link::before {
 	content: url("../img/logo-html.svg");
 
 	position: absolute;
-	right: -50px;
+	right: -20px;
 	top: 160px;
 }
 
@@ -1353,7 +1364,7 @@ input [type="text"]:focus {
 	display: inline-block;
 
 	font-family: "gilroyextrabold", "Arial", sans-serif;
-	font-style: 18px;
+	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.01em;
 	font-weight: bold;
@@ -1539,7 +1550,7 @@ input[type="radio"]:checked ~ i {
 
 	display: flex;
 	flex-direction: row;
-	flex-wrap: no-wrap;
+	flex-wrap: nowrap;
 	justify-content: space-between;
 }
 
@@ -1558,7 +1569,7 @@ input[type="radio"]:checked ~ i {
 	font-family: "gilroyextrabold", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
-	letter-spacing: 0,01em;
+	letter-spacing: 0.01em;
 }
 
 .catalog li {
@@ -1580,6 +1591,7 @@ input[type="radio"]:checked ~ i {
 	width: 360px;
 	height: 380px;
 	position: absolute;
+	top:0;
 	background-color: rgba(238, 238, 238, 0.5);
 }
 
@@ -1607,13 +1619,14 @@ input[type="radio"]:checked ~ i {
 	opacity: 0.2;
 }
 
+
+
 .item-hover {
 	display: none;
 }
 
 .img-item:hover + .item-hover {
 	display: block;
-	top:0;
 }
 
 .item-hover:hover {
@@ -1622,11 +1635,11 @@ input[type="radio"]:checked ~ i {
 
 
 .catalog-sorting .sorting a:active {
-	opacity: none;
+	opacity: 1;
 }
 
 .catalog span {
-	font-family: "gilroylight", "Arial", sans-serif
+	font-family: "gilroylight", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	opacity: 0.6;
