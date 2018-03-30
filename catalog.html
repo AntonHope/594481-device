@@ -17,10 +17,14 @@
         <!-- пользовательская навигация -->
         <div class="wrapper-nav-catalog">
         <ul class="user-navigation">
-          <li class="search"><a href="#">Поиск по сайту</a></li>
+          <li>
+            <input type="search" name="search" id="search-active" placeholder="Поиск по сайту">
+            <button class="search-btn">Найти</button>
+            <div class="black-line"></div>
+          </li>
           <li><a class="user-profile" href="#">Валентин Петухов</a></li>
           <li><a class="log-out" href="#">Выйти</a></li>
-          <li><a class="compare" href="#">Сравнение</a></li>
+          <li><a class="compare" href="#">Сравнить</a></li>
           <li><a class="basket" href="#">Корзина</a></li>
         </ul>
       
@@ -62,35 +66,48 @@
       <div class="filters-catalog-wrapper">
       <section class="filters">
         <div class="filters-caption-wrapper">
-          <h2>Фильтр</h2>
+          <h2>Фильтр:</h2>
         </div>
         <form class="form-wrapper" action="https://htmlacademy.ru" method="get">
-            <b>Стоимость</b>
-            <input type="range" name="range" min="0" max="70000" step="1">
+            <div class="filter-range">
+              <b class="filter-range-title">Стоимость</b>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от 0<input type="text" name="min-price"></label>
+                <label class="max-prise">до 5000<input type="text" name="max-prise"></label>
+              </div>
+              
+            </div>
             <b>Цвет</b>
             <label for="black">
-            <input type="checkbox" name="black" id="black"><span></span>Черный</label>
+            <input type="checkbox" name="black" id="black" checked><span></span>Черный</label>
 
             <label for="white">
             <input type="checkbox" name="white" id="white"><span></span>Белый</label>
 
             <label for="blue">
-            <input type="checkbox" name="blue" id="blue"><span></span>Синий</label>
+            <input type="checkbox" name="blue" id="blue" checked><span></span>Синий</label>
 
             <label for="red">
-            <input type="checkbox" name="red" id="red"><span></span>Красный</label>
+            <input type="checkbox" name="red" id="red" checked><span></span>Красный</label>
 
             <label for="pink">
             <input type="checkbox" name="pink" id="pink"><span></span>Розовый</label>
 
 
-            <b>Bluetooth</b>
+            <b class="bluetooth">Bluetooth</b>
 
             <label for="true">
-            <input type="radio" name="true" id="true" checked><i></i> Есть</label>
+            <input type="radio" name="radio" id="true" checked><i></i> Есть</label>
 
             <label for="false">
-            <input type="radio" name="false" id="false"><i></i>Нет</label>
+            <input type="radio" name="radio" id="false"><i></i>Нет</label>
             <input class="button" type="submit" name="wiev" value="Показать">
           </form>
       </section>
@@ -133,7 +150,7 @@
               <div class="item-label">
                <a href="catalog-item.html">
                   <h1 class="item-name">Профессиональная <br>селфи-палка</h1></a>
-                  <span>1500 руб.</span>
+                  <span>1 500 руб.</span>
               </div>
           </article>
           <article class="catalog-item">
@@ -145,7 +162,7 @@
               <div class="item-label">
                 <a href="catalog-item.html">
                   <h1 class="item-name">Непотопляемая селфи-палка</h1></a>
-                  <span>2500 руб.</span>
+                  <span>2 500 руб.</span>
               </div>  
           </article>
           <article class="catalog-item">
@@ -156,8 +173,8 @@
               </div>
               <div class="item-label">
                 <a href="catalog-item.html">
-                 <h1 class="item-name">Селфи-палка следуй за<br> мной</h1></a>
-                  <span>4900 руб.</span>
+                 <h1 class="item-name">Селфи-палка «Следуй за<br> мной»</h1></a>
+                  <span>4 900 руб.</span>
               </div>   
           </article>
           <div class="item-hover">
@@ -181,7 +198,7 @@
       <a class="footer-logo">
         <img src="img/footer-logo.png" width="163" height="36" alt="Логотип интернет-магазина DEVICE">
       </a>
-    <p class="footer-adress">г. Москва, ул Строителей, 15</p>
+    <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
     </div>
     <!-- футер навигация -->
     <div class="wrapper-site-nav">
