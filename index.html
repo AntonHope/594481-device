@@ -6,7 +6,7 @@
   <title>HTML Academy: Девайс</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/css.min.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
 
       <div class="haf-width">
         <label for="name">Ваше имя</label>
-        <input type="text" name="name" id="name" placeholder="Имя Фамилия" tabindex="1" autofocus>
+        <input type="text" name="login" id="name" placeholder="Имя Фамилия" tabindex="1" autofocus>
       </div>
       <div class="haf-width">
         <label for="email">Ваш e-mail</label>
@@ -32,6 +32,8 @@
   </div>
   <div class="fixed-overlay-map">
     <div class="popup-map">
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBUjq8HELC" width="960" height="599" frameborder="0"></iframe>
+      <img src="img/map-big.png" width="960" height="599" alt="Адрес интернет-магазина device г. Москва, ул. Строителей, 15">
       <a href="#" class="close-popup-map"></a>
     </div>
   </div>
@@ -288,34 +290,6 @@
       </div>
     </div>
   </footer>
-  <script type="text/javascript">
-var linkWrite = document.querySelector(".modal-popup-write");
-var popupWrite = document.querySelector(".fixed-overlay");
-var closePopup = document.querySelector(".close-popup");
-var popupMap = document.querySelector(".fixed-overlay-map");
-var linkMap = document.querySelector(".modal-map")
-var closeMap = document.querySelector(".close-popup-map")
-
-linkWrite.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popupWrite.classList.add("modal-show");
-});
-
-closePopup.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popupWrite.classList.remove("modal-show");
-  });
-
-linkMap.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popupMap.classList.add("modal-show")
-});
-
-closeMap.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popupMap.classList.remove("modal-show");
-});
-  </script>
+  <script src="js/script.min.js"></script>
 </body>
-
 </html>
