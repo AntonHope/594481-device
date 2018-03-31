@@ -11,7 +11,9 @@
 
 <body>
   <div class="fixed-overlay">
+
     <form class="popup-write-us" id="modal-popap" action="https://echo.htmlacademy.ru" method="get">
+
       <div class="haf-width">
         <label for="name">Ваше имя</label>
         <input type="text" name="name" id="name" placeholder="Имя Фамилия" tabindex="1" autofocus>
@@ -24,11 +26,14 @@
         <label for="text">Текст письма</label>
         <textarea name="text" id="text" placeholder="В свободной форме" tabindex="3"></textarea>
       </div>
+      <a class="close-popup"></a>
       <input class="button" type="submit" name="button" value="Отправить">
     </form>
   </div>
-  <div class="popup-map">
-    <img src="img/map-big.png" width="960" height="559" alt="Map">
+  <div class="fixed-overlay-map">
+    <div class="popup-map">
+      <a class="close-popup"></a>
+    </div>
   </div>
   <header class="main-header">
     <a class="main-header-logo">
