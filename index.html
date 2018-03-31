@@ -26,13 +26,13 @@
         <label for="text">Текст письма</label>
         <textarea name="text" id="text" placeholder="В свободной форме" tabindex="3"></textarea>
       </div>
-      <a class="close-popup"></a>
+      <a href="#" class="close-popup"></a>
       <input class="button" type="submit" name="button" value="Отправить">
     </form>
   </div>
   <div class="fixed-overlay-map">
     <div class="popup-map">
-      <a class="close-popup"></a>
+      <a href="#" class="close-popup-map"></a>
     </div>
   </div>
   <header class="main-header">
@@ -248,8 +248,8 @@
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <div class="map"><img src="img/small-map.png" width="560" height="222" alt="Map"></div>
-        <a class="button" href="#modal-popap">Напишите нам</a>
+        <div class="map"><a class="modal-map" href=""><img src="img/small-map.png" width="560" height="222" alt="Map"></a></div>
+        <a class="button modal-popup-write" href="#modal-popap">Напишите нам</a>
       </section>
     </div>
   </main>
@@ -288,6 +288,34 @@
       </div>
     </div>
   </footer>
+  <script type="text/javascript">
+var linkWrite = document.querySelector(".modal-popup-write");
+var popupWrite = document.querySelector(".fixed-overlay");
+var closePopup = document.querySelector(".close-popup");
+var popupMap = document.querySelector(".fixed-overlay-map");
+var linkMap = document.querySelector(".modal-map")
+var closeMap = document.querySelector(".close-popup-map")
+
+linkWrite.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popupWrite.classList.add("modal-show");
+});
+
+closePopup.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popupWrite.classList.remove("modal-show");
+  });
+
+linkMap.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popupMap.classList.add("modal-show")
+});
+
+closeMap.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popupMap.classList.remove("modal-show");
+});
+  </script>
 </body>
 
 </html>
