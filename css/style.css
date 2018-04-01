@@ -228,7 +228,6 @@ a
 }
 
 
-
 .fixed-overlay-map
 {
     position: fixed;
@@ -242,6 +241,10 @@ a
 
     width: 100%;
     height: 100%;
+}
+
+.popup-map iframe {
+    border: 0;
 }
 
 .popup-map
@@ -414,7 +417,7 @@ input [type='text']:focus
     display: none;
 }
 
-#search-active:focus ~ .search-btn
+.search-active:focus ~ .search-btn
 {
     display: block;
 }
@@ -435,8 +438,8 @@ input [type='text']:focus
     display: none;
 }
 
-#search-active:focus ~ .black-line,
-#search-active:active ~ .black-line
+.search-active:focus ~ .black-line,
+.search-active:active ~ .black-line
 {
     display: block;
 }
