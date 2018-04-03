@@ -1701,7 +1701,7 @@ input [type='text']:focus
     -ms-flex-direction: column;
 }
 
-.page-footer .wrapper-logo p
+.wrapper-logo p
 {
     margin-top: 22px;
 }
@@ -2160,7 +2160,7 @@ input [type='text']:focus
     align-items: flex-start;
 }
 
-.filters .form-wrapper b
+.form-wrapper b
 {
     font-family: 'gilroyextrabold', 'Arial', sans-serif;
     font-size: 18px;
