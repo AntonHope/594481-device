@@ -754,7 +754,7 @@ input [type='text']:focus
 
 .user-navigation,
 .site-navigation,
-.site-navigation > li > ul
+.site-navigation ul
 {
     list-style: none;
 }
@@ -1770,12 +1770,14 @@ input [type='text']:focus
 
 .social-btn li
 {
+    display: flex;
+
     margin-right: 22px;
 
     opacity: .3;
 }
 
-.social-btn li:first-child a
+.social-btn .fb
 {
     width: 32px;
     height: 32px;
@@ -1785,7 +1787,7 @@ input [type='text']:focus
     background-position: 0 0;
 }
 
-.social-btn li:nth-child(2) a
+.social-btn .inst
 {
     width: 32px;
     height: 32px;
@@ -1795,7 +1797,7 @@ input [type='text']:focus
     background-position: 0 0;
 }
 
-.social-btn li:last-child a
+.social-btn .tw
 {
     width: 32px;
     height: 32px;
